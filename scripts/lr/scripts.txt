@@ -1,0 +1,3 @@
+nohup sh ./scripts/lr/train_dcmh_lr.sh > logs/lr_new/dcmh_lr_0524.log 2>&1 &
+
+nohup sh ./scripts/lr/train_cpah_lr.sh > logs/lr_new/cpah_lr_0524.log 2>&1 &

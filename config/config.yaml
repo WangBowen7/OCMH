@@ -1,0 +1,49 @@
+ROOT: '/data/WangBoWen/OpenSet/'
+RATIO: '37'
+DATASET_NAME: 'MSCOCO'
+DOMAIN: 'source'
+SHUFFLE: True
+DROP_LAST: False
+MODEL_NAME: 'CL'
+CODE_LEN: 16
+MODEL_CKPT_PATH: '/home/SunYang/dev/UCMH/baseline_train/ckpt/'
+
+
+MOMENTUM: 0.9
+WEIGHT_DECAY: 0.0005
+BATCH_SIZE: 32
+MU: 1.5
+ETA: 0.4
+
+# LR_ORIGIN: 0.1
+# LR_EXPAND: 1
+
+
+MIRFlickr:
+  BETA: 0.9
+  # LAMBDA1: 0.1
+  # LAMBDA2: 0.1
+  EPOCHS: 400
+  # LR_IMG: 0.001
+  # LR_TXT: 0.01
+  EVAL_INTERVAL: 10
+NUSWIDE:
+  BETA: 0.6
+  # LAMBDA1: 0.1
+  # LAMBDA2: 0.1
+  EPOCHS: 400
+  # LR_IMG: 0.001
+  # LR_TXT: 0.01
+  EVAL_INTERVAL: 10
+MSCOCO: # copy NUSWIDE
+  BETA: 0.6
+  # LAMBDA1: 0.1
+  # LAMBDA2: 0.1
+  EPOCHS: 400
+  # LR_IMG: 0.001
+  # LR_TXT: 0.01
+  EVAL_INTERVAL: 10
+
+
+
+
